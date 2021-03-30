@@ -159,31 +159,37 @@ body {
 
 .offers {
 background-color: var(--bg-color);
-padding-top: 80px;
-padding-bottom: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .offers h2 {
     font-weight: bold;
     font-size: 24px;
-    padding-bottom: 38px;
+    margin-bottom: 38px;
     padding-left: 15px;
 }
 .container2 {
     max-width: 1130px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
 }
 
 .cards-wrap {
     display: flex;
+    flex-wrap: wrap;
 
 }
 
 .product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: #FFF;
 /*     margin-left: 15px; */
     margin: 0px 15px;
+    width: calc(100% / 12 * 3 - 30px);
+    padding: 25px 30px;
 }
 
 /* .product-card p.price {
@@ -193,55 +199,41 @@ padding-bottom: 80px;
     font-size: 21px;
 } */
 
-.product-card > img{
-    padding-top: 25px;
-    padding-left: 65px;
-    padding-right: 65px;
-    padding-bottom: 10px;
+.product-card .image{
+    margin-bottom: 10px;
 }
 
 .product-card .name{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
     font-size: 14px;
     line-height: 20px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .product-card .price{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 87px;
-    padding-right: 87px;
     font-size: 21px;
-    line-height: 25px;
     text-align: center;
     letter-spacing: 0.05em;
     font-weight: 700;
+    margin-bottom: 20px;
 }
 
 .product-card .get-product{
-    margin-top: 10px;
-    margin-left: 62px;
-    margin-right: 62px;
-    width: 130px;
-    height: 35px;
-    margin-bottom: 25px;
     background: var(--main-color);
-    border-radius: 30px;
-    border-color: var(--maingif-color);
-    border-width: 0px;
+    padding: 9px 39px;
     color: white;
     font-size: 14px;
     line-height: 16px;
     text-align: center;
     letter-spacing: 0.05em;
+    border: none;
+    border-radius: 30px;
 }
 
 .bonus {
     background-color: var(--bg-color);
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .container3 {
@@ -258,7 +250,7 @@ padding-bottom: 80px;
     height: 212px;
     padding-top: 35px;
     padding-left: 40px;
-    background-image: url(/img/bonus.gifts/envelope.png);
+    background-image: url("/img/bonus.gifts/envelope.png");
     background-repeat: no-repeat;
     background-position-x: 350px;
     background-position-y: 50%;
@@ -286,7 +278,7 @@ padding-bottom: 80px;
     height: 212px;
     padding-top: 35px;
     padding-left: 40px;
-    background-image: url(/img/bonus.gifts/car.png);
+    background-image: url("/img/bonus.gifts/car.png");
     background-repeat: no-repeat;
     background-position-x: 300px;
     background-position-y: 50%;
@@ -328,7 +320,7 @@ padding-bottom: 80px;
 }
 .brand {
     background-color: var(--bg-color);
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 .container4 {
@@ -399,7 +391,7 @@ width: 99px;
 .Contacts 
 
 .Contacts__container {
-    max-width: 1120px;
+    max-width: 1130px;
     margin-left: auto;
     margin-right: auto;
     padding: 38px 0px;
